@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/cally"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+      </div>
+      <div class="navbar-center">
+        <a class="text-xl">Registro Classe 5EI</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+  <table class="table table-xs">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Cognome</th>
+        <th>Nome</th>
+        <th>Città</th>
+        <th>Età</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td id="1" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('1')">Bedeli</td>
+        <td class="nome">Klevi</td>
+        <td class="citta">Travagliato</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td id="2" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('2')" >Bergamaschi</td>
+        <td class="nome">Tommaso</td>
+        <td class="citta">Poncarale</td>
+        <td class="eta">19</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td id="3" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('3')">Cicalese</td>
+        <td class="nome">Anton</td>
+        <td class="citta">Cazzago</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td id="4" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('4')">Cirillo</td>
+        <td class="nome">Sabrina</td>
+        <td class="citta">Chiesanuova</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td id="5" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('5')">Datla</td>
+        <td class="nome">Navjot</td>
+        <td class="citta">Brescia</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td id="6" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('6')">De Domenico</td>
+        <td class="nome">Francesco</td>
+        <td class="citta">Concesio</td>
+        <td class="eta">17</td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td id="7" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('7')">Delbarba</td>
+        <td class="nome">Filippo</td>
+        <td class="citta">Paderno F.C.</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td id="8" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('8')">Ferrari</td>
+        <td class="nome">Paolo</td>
+        <td class="citta">Poncarale</td>
+        <td class="eta">18</td>
+
+      </tr>
+      <tr>
+        <th>9</th>
+        <td id="9" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('9')">Gogeanu</td>
+        <td class="nome">Marco</td>
+        <td class="citta">Urago Mella</td>
+        <td class="eta">17</td>
+      </tr>
+      <tr>
+        <th>10</th>
+        <td id="10" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('10')">Lucidera</td>
+        <td class="nome">Matteo</td>
+        <td class="citta">Concesio</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>11</th>
+        <td id="11" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('11')">Maggi</td>
+        <td class="nome">Federico</td>
+        <td class="citta">Fornaci</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>12</th>
+        <td id="12" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('12')">Mazza</td>
+        <td class="nome">Lorenzo</td>
+        <td class="citta">Bedizzole</td>
+        <td class="eta">19</td>
+      </tr>
+      <tr>
+        <th>13</th>
+        <td id="13" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('13')">Mekolli</td>
+        <td class="nome">Leonardo</td>
+        <td class="citta">Brescia</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>14</th>
+        <td id="14" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('14')">Piccinali</td>
+        <td class="nome">Luca</td>
+        <td class="citta">Comezzano Cizzago</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>15</th>
+        <td id="15" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('15')">Pletti</td>
+        <td class="nome">Gianluca</td>
+        <td class="citta">Travagliato, Via Castrezzato 36</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>16</th>
+        <td id="16" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('16')">Roberti</td>
+        <td class="nome">Luca</td>
+        <td class="citta">Travagliato</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>17</th>
+        <td id="17" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('17')">Sangaletti</td>
+        <td class="nome">Matteo</td>
+        <td class="citta">Ciliverghe</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>18</th>
+        <td id="18" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('18')">Tagliani</td>
+        <td class="nome">Daniel</td>
+        <td class="citta">Brescia</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>19</th>
+        <td id="19" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('19')">Tognoli</td>
+        <td class="nome">Laura</td>
+        <td class="citta">Poncarale</td>
+        <td class="eta">18</td>
+      </tr>
+      <tr>
+        <th>20</th>
+        <td id="20" class="btn btn-ghost hover:text-primary" onclick="mostraCarta('20')">Zhang</td>
+        <td class="nome">Eroe</td>
+        <td class="citta">Brescia</td>
+        <td class="eta">19</td>
+      </tr>
+    </tbody>
+    
+  </table>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>

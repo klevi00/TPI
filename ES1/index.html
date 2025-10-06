@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Numeri Casuali e Local Storage
+    </h1>
+    <div class="corpo">
+        <div>
+            <button onclick="generate()" id="btnGenera">Genera Numeri</button>  
+            <ul id="listaPuntata"></ul>      
+        </div>
+        <div>
+            <button onclick="retrieve()">Visualizza Numeri</button> 
+            <ul id="numeriSalvati"></ul>
+        </div>
+        <button class="update" onclick="update()">Aggiorna</button>
+        <button class="clear" onclick="clearCache()">Svuota</button>
+
+    </div>
+    
+    <h3 id="messaggioErroreVisualizza"></h3>
+    
+    
+    
+    
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
