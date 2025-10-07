@@ -39,7 +39,7 @@
 
     <!--Inserimento attività-->
     <div class="card bg-base-100 shadow-sm w-full mt-8">
-      <div class="card-body">
+      <div class="card-body ">
         <h2 class="card-title text-2xl">Aggiungi una nuova nota</h2>
         <div class="flex w-full gap-4">
           <fieldset class="fieldset flex-1">
@@ -50,9 +50,9 @@
             <label class="label text-lg">Priorità</label>
             <select class="select" id="priorita">
               <option disabled selected>Scegli la priorità</option>
-              <option>🟢 Bassa</option>
-              <option>🟡 Media</option>
-              <option>🔴 Alta</option>
+              <option value="bassa">🟢 Bassa</option>
+              <option value="media">🟡 Media</option>
+              <option value="alta">🔴 Alta</option>
             </select>
           </fieldset>
         </div>
@@ -64,18 +64,38 @@
           </fieldset>
           <fieldset class="fieldset flex-1">
             <label class="label text-lg">Data di scadenza</label>
-            <input type="datetime-local" class="input">
+            <input type="datetime-local" class="input" id="dataScadenza">
           </fieldset>
         </div>
         <div class="flex w-full items-center justify-end">
-          <button class="btn mr-20">Aggiungi</button>
+          <button class="btn mr-20" onclick="aggiungiNota()">Aggiungi</button>
         </div>
       </div>
     </div>
+
+    <!--Barra di Ricerca per le note-->
+    <div class="flex w-full mt-5">
+      <input type="text" placeholder="🔎 Cerca la nota" class="input flex-1">
+      <div class="ml-8">
+        <button class="btn btn-active">Tutte</button>
+        <button class="btn">Da fare</button>
+        <button class="btn">Completate</button>
+      </div>
+    </div>
+
+    <!--bottoni selezionare-->
+    <div class="flex w-full mt-5 gap-5">
+      <button class="btn text-secondary"><img width="30" src="https://img.icons8.com/?size=100&id=cj1OMgISf1Fq&format=png&color=000000" alt="list--v1"> Seleziona tutto</button>
+      <button class="btn text-secondary"> <img width="30" src="https://img.icons8.com/?size=100&id=42858&format=png&color=000000" alt="">Elimina selezionate (<span id="noteSelezionate">0</span>)</button>
+      <button class="btn text-secondary"> <img width="30" src="https://img.icons8.com/?size=100&id=42786&format=png&color=000000" alt="">Cancella tutto</button>
+    </div>
+
+    <div class="todoList space-y-3">
+
+    </div>
+
   </div>
-
-
-
+  <script src="main.js"></script>
 
 </body>
 
